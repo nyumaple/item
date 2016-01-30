@@ -1,0 +1,19 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+div#last {
+	width:1024px;
+	height:auto;
+	left:50%;
+	margin-left:-512px;
+	position:relative;
+	top:-15px;
+	background-color:#F0F0F0;
+}
+
+div#last img {
+	width:100%;
+}
+

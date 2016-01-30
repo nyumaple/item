@@ -1,0 +1,382 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+div.center {
+	width:1024px;
+	height:auto;
+	position:relative;
+	left:50%;
+	margin-left:-512px;
+}
+
+img#advertisementLine {
+	position:absolute;
+	top:20px;
+	height:1600px;
+	width:3px;
+}
+
+img.detailedImag {
+	width:350px;
+	height:350px;
+	position:absolute;
+	top:60px;
+	left:30px;
+}
+
+div.selectImprintMethod {
+	width:600px;
+	height:100px;
+	position:relative;
+	top:60px;
+	left:430px;
+}
+
+img.headline {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:600px;
+}
+
+p.headlineIndex {
+	position:absolute;
+	top:6px;
+	left:21px;
+	font-size:20px;
+	color:white;
+}
+
+p.headlineWord {
+	position:absolute;
+	top:5px;
+	left:51px;
+	font-size:20px;
+	color:white;
+}
+
+ul#tag {
+	position:relative;
+	top:2px;
+	left:23px;
+}
+
+#tag li {
+	width:115px;
+	height:40px;
+	display:block;
+	float:left;
+	list-style-type:none;
+	margin:0px;
+	background-image:url(../imag/detailedGray.png);
+	color:white;
+	text-align:center;
+	line-height:40px;
+}
+
+#tag li.current {
+	background-image:url(../imag/detailedWhite.png);
+	background-image:url("../imag/red-checkmark.png");
+	background-repeat:no-repeat;
+	background-position:100% 0%;
+	background-size:12px 12px;
+	color:#FFCC33;
+}
+
+#content {
+	position:relative;
+	left:23px;
+	top:40px;
+	width:600px;
+}
+
+ul.QTYposition{
+	position:absolute;
+	top:20px;
+	left:5px;
+}
+
+li.QTY {
+	list-style-type:none;
+	display:block;
+	float:left;
+	width:70px;
+	color:#FFCC33;
+	text-align:center;
+}
+
+img.detailedline {
+	width:570px;
+	position:absolute;
+	top:40px;
+	left:5px;
+}
+
+li.number{
+	list-style-type:none;
+	display:block;
+	float:left;
+	width:70px;
+	position:relative;
+	top:15px;
+	left:5px;
+	color:#808080;
+	text-align:center;
+}
+
+input[type="number"] {
+	width:60px;
+    font-size:15px;
+	text-align:center;
+}
+
+#update {
+	width:100px;
+	height:50px;
+    font-size:25px;
+	position:relative;
+	top:480px;
+	left:240px;
+}
+
+#delete {
+	width:100px;
+	height:50px;
+    font-size:25px;
+	position:relative;
+	top:430px;
+	left:80px;
+}
+
+#content div {
+	display:none;
+}
+
+div.selectColor {
+	width:600px;
+	height:auto;
+	position:relative;
+	top:130px;
+	left:430px;
+}
+
+img.colorHeadline{
+	width:600px;
+	position:relative;
+	top:-4px;
+	left:0px;
+}
+
+p.colorHeadlineIndex {
+	position:absolute;
+	top:2px;
+	left:21.5px;
+	font-size:20px;
+	color:white;
+}
+
+p.colorHeadlineWord {
+	position:absolute;
+	top:2px;
+	left:51px;
+	font-size:20px;
+	color:white;
+}
+
+#colors ul {
+	position:relative;
+	top:15px;
+	left:35px;
+}
+
+#colors li {
+	display:inline-block;
+	list-style-type:none;
+	margin-right:15px;
+	width:55px;
+	height:30px;
+}
+
+.currentColor {
+	background-image:url("../imag/red-checkmark.png");
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size:15px 15px;
+	border:solid thin #FFCC33;
+}
+
+div#whereToPrint {
+	width:600px;
+	height:auto;
+	position:relative;
+	top:155px;
+	left:430px;
+}
+
+img.whereToPrintHeadline {
+	width:600px;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+p.whereToPrintHeadlineIndex {
+	position:absolute;
+	top:8px;
+	left:20px;
+	font-size:20px;
+	color:white;
+}
+
+p.whereToPrintHeadlineWord {
+	position:absolute;
+	top:8px;
+	left:50px;
+	font-size:20px;
+	color:white;
+}
+
+img#whereToPrint_imag {
+	position:relative;
+	left:30px;
+	top:20px;
+	width:150px;
+	height:150px;
+}
+
+.whereToPrint p {
+	position:absolute;
+	left:250px;
+	top:60px;
+}
+
+.whereToPrint ul {
+	position:absolute;;
+	left:250px;
+	top:88px;
+}
+
+.whereToPrint li {
+	list-style-type:none;
+	display:inline-block;
+	width:110px;
+	height:30px;
+	text-align:center;
+	line-height:30px;	
+	margin-bottom:2px;
+	border:red thin solid;
+}
+
+.currentPlace {
+	background-image:url("../imag/red-checkmark.png");
+	background-repeat:no-repeat;
+	background-position:100% 25%;
+	background-size:15px 15px;
+	border:solid thin #FFCC33;
+}
+
+.whereToPrint p{
+	font-family:arial;
+	font-size:18px;
+}
+
+div#number{
+	width:600px;
+	height:auto;
+	position:relative;
+	top:180px;
+	left:430px;
+}
+
+img.numberHeadLine{
+	width:600px;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+p.numberHeadlineIndex {
+	position:absolute;
+	top:7px;
+	left:20px;
+	font-size:20px;
+	color:white;
+}
+
+p.numberHeadlineWord {
+	position:absolute;
+	top:7px;
+	left:51px;
+	font-size:20px;
+	color:white;
+}
+
+ul.numberIndex {
+	position:relative;
+	top:57px;
+	left:30px;
+}
+
+.numberIndex li {
+	list-style-type:none;
+	display:inline-block;
+	width:48px;
+	text-align:center;
+	font-size:11px;
+	margin:0px 10px 0px 10px;
+	position:relative;
+	left:11px;
+}
+
+.numberBox {
+	position:relative;
+	left:40px;
+	width:42px;
+	height:20px;
+	margin:0px 10px 0px 10px;
+}
+
+input[type="number"]
+{
+    font-size:15px;
+	text-align:center;
+}
+
+div#cart {
+	width:600px;
+	height:auto;
+	position:relative;
+	top:200px;
+	left:430px;
+}
+
+div#cart img.atc {
+	display:inline-block;
+	width:170px;
+	height:50px;
+	position:relative;
+	left:430px;
+	top:40px;
+}
+
+div#productDescription {
+	position:relative;
+	top:350px;
+	
+}
+
+div#productDescription p {
+	font-family:serif;
+	font-size:20px;
+}
+
+#description-update {
+	width:100px;
+	height:50px;
+    font-size:25px;
+	position:relative;
+	top:0px;
+	left:40px;
+}

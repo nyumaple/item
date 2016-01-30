@@ -1,0 +1,162 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+div#center{
+	width:1024px;
+	height:712px;
+	position:relative;
+	top:-5px;
+	left:50%;
+	margin-left:-512px;
+}
+
+img#advertisementLine {
+	position:absolute;
+	top:20px;
+	height:600px;
+	width:3px;
+}
+
+ul#leftMenu {
+	float:left;
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+	position: absolute;
+	left:16px;
+	top:20px;
+}
+
+li#first{
+	width:170px;
+	height:53px;
+	padding-left:30px;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	text-align:left;
+	line-height:53px;
+	background-image:url(../imag/overview.png);
+}
+
+ul#leftMenu a{
+	color:#606060;
+	text-decoration:none;
+	display:block;
+	width:170px;
+	height:50px;
+	padding-left:30px;
+	font-family:arial;
+	font-size:14pt;
+	font-weight:bold;
+	text-align:left;
+	line-height:53px;
+	background-image:url(../imag/leftMenu.png);
+}
+
+ul#leftMenu a:hover,a:active {
+	background-color:#B8B8B8;
+	color:white;
+}
+
+div.CategoryImage {
+	position:relative;
+	left:245px;
+	width:780px;
+	height:auto;
+}
+
+img.CategoryLine {
+	position:absolute;
+	top:20px;
+	left:0px;
+}
+
+p.categoryName {
+	position:absolute;
+	top:28px;
+	left:20px;
+	color:white;
+	font-size:20px;
+	font-family:arial;
+	font-style:italic;
+}
+
+div.goods {
+	display:inline;
+	float:left;
+	position:relative;
+	top:60px;
+	width:200px;
+	height:300px;
+	margin-right:60px;
+}
+
+div.goods a {
+	text-decoration:none;
+	color:black;
+}
+
+p.operator {
+	display:inline-block;
+	cursor:pointer;
+	color:red;
+	margin-right:10px;
+}
+
+img.goodsImag {
+	width:200px;
+	height:200px;
+}
+
+p.goodsId {
+	position:relative;
+	top:5px;
+	text-align:center;
+	font-family:Arial;
+	font-size:18px;
+}
+
+p.goodsPay {
+	position:relative;
+	top:20px;
+	left:95px;
+	color:#FFCC33;
+	font-size:20px;
+}
+
+img.goodsShallow {
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+div#addForm {
+	position:relative;
+	top:65px;
+	left:265px;
+	width:780px;
+	height:auto;
+}
+
+input[type="text"] {
+	width:90px;
+}
+
+input[type="number"] {
+	width:90px;
+    font-size:15px;
+	text-align:center;
+}
+
+.addQty li {
+	display:inline;
+	list-style-type:none;
+}
+
+.addPrice li {
+	display:inline;
+	list-style-type:none;
+}

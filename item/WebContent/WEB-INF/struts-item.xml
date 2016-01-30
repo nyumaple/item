@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<package name="ItemAction" extends="abstract_struts">
+	<action name="addItem" class="action.ItemAction" method="addItem">
+			<result name="success" type="redirect">userMain.jsp</result>
+			<result name="fail">/userMain.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

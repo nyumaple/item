@@ -1,0 +1,9 @@
+/action/
+/auth/
+/dao/
+/domain/
+/exception/
+/filter/
+/service/
+/struts.xml
+/vo/

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Struts2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+	<!-- 配置了系列常量 -->
+	<constant name="struts.custom.i18n.resources" value="resource"/>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.devMode" value="false"/>
+
+	<package name="abstract_default" extends="struts-default" namespace="/">
+	
+		<!-- 定义全局Result映射 -->
+		 <!--<global-results>
+			
+			<result name="business">/WEB-INF/content/error.jsp</result>
+			<result name="root">/WEB-INF/content/error.jsp</result>
+			
+			<result name="login">/WEB-INF/content/login.jsp</result>
+		</global-results> 
+
+	
+		 <global-exception-mappings>
+		
+			 <exception-mapping 
+				 exception="org.spring.iwantbooks.exception.HrException"
+				 result="business"/>
+			 
+			 <exception-mapping exception="java.lang.Exception" 
+		 		result="root"/>
+		 </global-exception-mappings> -->
+
+		
+		
+		
+		
+<!-- 定义处理登录系统的的Action -->
+<action name="processLogin"
+	class="org.spring.iwantbooks.action.LoginAction">
+	<result name="input">login.jsp</result>
+	<result name="user">main.jsp</result>
+	<result name="error">login.jsp</result>
+</action>
+
+<action name="processRegist"
+    class="org.spring.iwantbooks.action.RegistAction">
+	<result name="input">login.jsp</result>
+	<result name="success">main.jsp</result>
+</action>
+
+    
+    <action name="findOverview" class="action.DifferentKind" method="findOverview">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    
+    <action name="findApparel" class="action.DifferentKind" method="findApparel">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findBags" class="action.DifferentKind" method="findBags">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findBalloon" class="action.DifferentKind" method="findBalloon">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findCup" class="action.DifferentKind" method="findCup">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findKeyrings" class="action.DifferentKind" method="findKeyrings">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findNotebook" class="action.DifferentKind" method="findNotebook">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findPen" class="action.DifferentKind" method="findPen">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findPrize" class="action.DifferentKind" method="findPrize">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findStickers" class="action.DifferentKind" method="findStickers">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findToys" class="action.DifferentKind" method="findToys">
+            <result name="success">category-backend.jsp</result>
+    </action>
+    <action name="findUmbrella" class="action.DifferentKind" method="findUmbrella">
+            <result name="success">category-backend.jsp</result>
+    </action>
+	</package>
+	
+	<package name="ItemAction" extends="abstract_default" namespace="/">
+	<action name="addItem" class="action.ItemAction" method="addItem">
+			<result name="success" type="redirect">findOverview</result>
+		</action>
+ 
+    <action name="updateItem" class="action.ItemAction" method="updateItem">
+            <result name="success" type="redirect">findOverview</result>
+    </action>
+    
+    <action name="deleteItem" class="action.ItemAction" method="deleteItem">
+            <result name="success" type="redirect">findOverview</result>
+    </action>
+    
+    <action name="seeDetail" class="action.ItemAction" method="seeDetail">
+            <result name="success">detailedInf-backend.jsp</result>
+    </action>
+    
+    <action name="updatePrices" class="action.ItemAction" method="updatePrices">
+            <result name="success" type="redirect">findOverview</result>
+    </action>
+    </package>
+	
+
+</struts>

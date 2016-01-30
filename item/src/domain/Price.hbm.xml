@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Hibernate映射文件的DTD信息 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="domain">
+	<class name="Price" table="Price">
+		<!-- 使用只读缓存 -->
+		<cache usage="read-only"/>
+		<!-- 映射标识属性 -->
+		<id	name="id" type="integer" column="id">
+			<!-- 指定使用identity主键生成策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="ItemId" column="ItemId"	type="integer" />
+		<property name="price_kind" column="kind"	type="string" length="20" />
+	    <property name="qty1" column="qty1"	type="integer" />
+		<property name="price1" column="price1"	type="double" />
+		<property name="qty2" column="qty2"	type="integer" />
+	    <property name="price2" column="price2"	type="double" />
+	    <property name="qty3" column="qty3"	type="integer" />
+	    <property name="price3" column="price3"	type="double" />
+	    <property name="qty4" column="qty4"	type="integer" />
+		<property name="price4" column="price4"	type="double" />
+		<property name="qty5" column="qty5"	type="integer" />
+		<property name="price5" column="price5"	type="double" />
+		<property name="qty6" column="qty6"	type="integer" />
+		<property name="price6" column="price6"	type="double" />
+		<property name="qty7" column="qty7"	type="integer" />
+		<property name="price7" column="price7"	type="double" />
+
+
+	</class>
+</hibernate-mapping>
